@@ -9,7 +9,7 @@ import re
 from bs4 import BeautifulSoup
 import argparse
 
-__author__ = 'undefined objects'
+__author__ = "undefined objects"
 
 def connect_mysql():
   return mysql.connector.connect(
@@ -24,8 +24,8 @@ def main():
 
   parser = argparse.ArgumentParser(description="Web Indexer")
   
-  parser.add_argument('-s', '--start', dest='start', type=str, help='Start IP', required=True)
-  parser.add_argument('-e', '--end', dest='end', type=str, help='End IP', required=True)
+  parser.add_argument("-s", "--start", dest="start", type=str, help="Start IP", required=True)
+  parser.add_argument("-e", "--end", dest="end", type=str, help="End IP", required=True)
 
   args = parser.parse_args()
 
