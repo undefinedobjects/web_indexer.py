@@ -82,5 +82,5 @@ def main():
   else:
     print("Database is Not Connected")
 
-if __name__ == '__main__':
+if __name__ == "__main__":
 	main()
